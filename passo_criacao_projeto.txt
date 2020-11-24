@@ -1,0 +1,3 @@
+https://github.com/jeroennoten/Laravel-AdminLTE
+composer create --prefer-dist laravel/laravel larafood
+php artisan key:generate --ansi

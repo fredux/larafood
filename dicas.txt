@@ -1,0 +1,18 @@
+ #criar request - para regra de validações dos campos
+ php artisan make:request StoreUpdatePlan
+
+ #criar Observer - observa o eloquen para executar algo antes/depois de modificacações no banco
+  php artisan make:observer PlanObserver --model=Models\\Plan
+
+
+   php artisan make:model Models\\DetailPlan -m
+
+   php artisan make:controller Admin\\ACL\\ProfileController --resource
+
+
+   First Clear your Cache,
+
+php artisan config:clear
+php artisan config:cache
+
+And Then Run sudo chmod -R 777 storage/
