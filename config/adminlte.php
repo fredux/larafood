@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'LaraFood',
+    'title' => 'LaraFood' ,
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -134,7 +134,7 @@ return [
 
     'use_route_url' => false,
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
 
     'logout_url' => 'logout',
 
@@ -177,55 +177,55 @@ return [
             'text' => 'Empresas',
             'url'  => 'admin/tenants',
             'icon' => 'fas fa-building',
-          //  'can'  =>  'tenants',
+            'can'  =>  'tenants',
         ],
         [
             'text' => 'Planos',
             'url'  => 'admin/plans',
             'icon' => 'fas fa-list-alt',
-          //  'can'  =>  'plans',
+            'can'  =>  'plans',
         ],
         [
             'text' => 'Perfis',
             'url'  => 'admin/profiles',
             'icon' => 'fas fa-address-book',
-          //  'can'  =>  'profiles',
+            'can'  =>  'profiles',
         ],
         [
             'text' => 'Cargos',
             'url'  => 'admin/roles',
             'icon' => 'fas fa-address-card',
-          // 'can'  =>  'roles',
+           'can'  =>  'roles',
         ],
         [
             'text' => 'Permissões',
             'url'  => 'admin/permissions',
             'icon' => 'fas fa-lock',
-          //  'can'  =>  'permissions',
+            'can'  =>  'permissions',
         ],
         [
             'text' => 'Usuários',
             'url'  => 'admin/users',
             'icon' => 'fas fa-users',
-          //  'can'  =>  'users',
+            'can'  =>  'users',
         ],
         [
             'text' => 'Categorias',
             'url'  => 'admin/categories',
             'icon' => 'fas fa-layer-group',
-         //   'can'  =>  'categories',
+            'can'  =>  'categories',
         ],
         [
             'text' => 'Produtos',
             'url'  => 'admin/products',
             'icon' => 'fas fa-hamburger',
-          //  'can'  =>  'products',
+            'can'  =>  'products',
         ],
         [
             'text' => 'Mesas',
             'url'  => 'admin/tables',
             'icon' => 'fas fa-tablet',
-          //  'can'  =>  'tables',
+            'can'  =>  'tables',
         ],
     ],
 
@@ -245,7 +245,6 @@ return [
         JeroenNoten\LaravelAdminLte\Menu\Filters\HrefFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\SearchFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\ActiveFilter::class,
-        JeroenNoten\LaravelAdminLte\Menu\Filters\SubmenuFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\ClassesFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\GateFilter::class,
         JeroenNoten\LaravelAdminLte\Menu\Filters\LangFilter::class,

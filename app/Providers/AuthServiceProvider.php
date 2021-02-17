@@ -39,7 +39,7 @@ class AuthServiceProvider extends ServiceProvider
                 return $user->hasPermission($permission->name);
             });
         }
-
+        // saber se o usuario e o dono do produto
         Gate::define('owner', function(User $user, $object) {
             return $user->id === $object->user_id;
         });

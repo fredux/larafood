@@ -1,0 +1,25 @@
+version: "3"
+
+services: 
+  larafood-app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes: 
+      - ./:/usr/share/nginx
+    networks:
+      - app-network
+  mysql-app:
+    image: mysql:latest
+    ports:
+      - "3306:3306" 
+    volumes: 
+      - .docker/dbdata:/var/lib/mysql 
+    environment: 
+      MYSQL_DATABASE: larafood
+      MYSQL_ROOT_PASSWORD: bahiax77
+    networks:
+      - app-network
+networks: 
+  app-network:
+    driver: bridge
